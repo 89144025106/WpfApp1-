@@ -24,5 +24,10 @@ namespace WpfApp1_Гуляева_К_алгоритмы
         {
             InitializeComponent();
         }
+
+        private void Pusk_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
