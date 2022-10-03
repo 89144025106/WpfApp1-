@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Введите x" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="16"/>
+        <TextBox x:Name="X" Grid.Row="0" Grid.Column="1" Margin="5"/>
+        <Label Content="Введите y" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="16"/>
+        <Label Content="Введите y" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="16"/>
+        <TextBox x:Name="Y" Grid.Row="1" Grid.Column="1" Margin="5"/>
     </Grid>
 </Window>
