@@ -27,7 +27,28 @@ namespace WpfApp1_Гуляева_К_алгоритмы
 
         private void Pusk_Click(object sender, RoutedEventArgs e)
         {
+            // Получение исходных данных из TextBox
+            double x = Convert.ToDouble(X.Text);
+            double y= Convert.ToDouble(Y.Text);
+            double z = Convert.ToDouble(Z.Text);
+
+            //Ввод исходных данных в окно результатов
+            Itog.Text = "Результаты работы программы ст. Петрова И.И." + Environment.NewLine;
+            Itog.Text += "При X = " + X.Text + Environment.NewLine;
+            Itog.Text += "При Y = " + Y.Text + Environment.NewLine;
+            Itog.Text += "При Z = " + Z.Text + Environment.NewLine;
+
+            //Определение номера выбранной функции
+            int n = 0;
+            double u;
+
+            if (Radio2.IsChecked == true) n = 1;
+            else if (Radio3.IsChecked == true) n = 2;
+
+            // Вычесление U
+            switch (n)
+            { 
 
         }
     }
-}
+

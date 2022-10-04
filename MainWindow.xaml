@@ -26,7 +26,7 @@
         <Label Content="Введите y" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="16"/>
         <TextBox x:Name="Y" Grid.Row="1" Grid.Column="1" Margin="5"/>
         <Label Content="Ведите z" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
-        <TextBox x:Name="Z" Grid.Row="1" Grid.Column="1" Margin="5"/>a
+        <TextBox x:Name="Z" Grid.Row="1" Grid.Column="1" Margin="5"/>
         <StackPanel x:Name="stackPanel" Grid.Row="0" Grid.Column="2" Grid.RowSpan="3" Grid.ColumnSpan="2" Margin="50, 10, 10, 10">
             <Label Content="F(x)" FontSize="16"/>
             <RadioButton GroupName="Fonkciy" Content="sin(x)" FontSize="16" IsChecked="True"/>
@@ -34,8 +34,8 @@
             <RadioButton GroupName="Fonkciy" Content="exp(x)" FontSize="16"/>
             </StackPanel>
         <TextBox x:Name="Itog" Grid.Row="3" Grid.ColumnSpan="4" Margin="10"/>
-        <Button x:Name="Pusk" Grid.Row="4" Grid.Column="1" Content="Пуск"/>
+        <Button x:Name="Pusk" Grid.Row="4" Grid.Column="1" Content="Пуск" Click="Pusk_Click" />
         <Button x:Name="Clin" Grid.Row="4" Grid.Column="3" Content="Очистить"/>
-        <Button x:Name="Pusk" Grid.Row="4" Grid.Column="1" Content="Пуск" Click="Pusk_Click"/>
+ 
     </Grid>
 </Window>
