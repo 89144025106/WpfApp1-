@@ -29,7 +29,7 @@ namespace WpfApp1_Гуляева_К_алгоритмы
         {
             // Получение исходных данных из TextBox
             double x = Convert.ToDouble(X.Text);
-            double y= Convert.ToDouble(Y.Text);
+            double y = Convert.ToDouble(Y.Text);
             double z = Convert.ToDouble(Z.Text);
 
             //Ввод исходных данных в окно результатов
@@ -41,14 +41,34 @@ namespace WpfApp1_Гуляева_К_алгоритмы
             //Определение номера выбранной функции
             int n = 0;
             double u;
-
-            if (Radio2.IsChecked == true) n = 1;
-            else if (Radio3.IsChecked == true) n = 2;
-
+            
+            if (Radio.IsChecked == true) n = 1;
+            else if (Radio.IsChecked == true) n = 2;
+            
             // Вычесление U
-            switch (n)
+            switch (n) 
             { 
 
+
+                case 0:
+                if ((z - x) == 0) u = y * Math.Sin(x) * Math.Sin(x) + z;
+                else if ((z - x) < 0) u = y * Math.Exp(Math.Sin(x)) - z;
+                else u = y * Math.Sin(Math.Sin(x)) + z;
+                Itog.Text += "U= " + Convert.ToString(u) + Environment.NewLine;
+                break;
+            case 2:
+                if ((z - x) == 0) u = y * Math.Exp(x) + z;
+                else if ((z - x) < 0) u = y * Math.Exp(Math.Exp(x)) - z;
+                else u = y * Math.Sin(Math.Exp(x)) + z;
+                Itog.Text += "U = " + Convert.ToString(u) + Environment.NewLine;
+                break;
+            default:
+                Itog.Text += "Решение не найдено" + Environment.NewLine;
+                break;
+            }
         }
     }
+}
+
+     
 
